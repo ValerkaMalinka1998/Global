@@ -1,0 +1,19 @@
+body {
+  border: 2px solid red;
+}
+
+section, header, footer {
+  border: 2px solid gold;
+}
+
+.container {
+  border: 1px solid green;
+}
+
+.row {
+  border: 1px solid blue;
+}
+
+.col {
+  border: 1px solid purple;
+}

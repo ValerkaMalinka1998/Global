@@ -1,0 +1,211 @@
+:root {
+  --bg-style: #ECF7F3;
+  --primary-green: #48B774;
+  --primary-orange: #FF8345;
+  --primary-black: #2D2D2D;
+}
+
+
+/* Font family */
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'),
+    url('/font/Poppins-BoldItalic.woff') format('woff'),
+    url('/font/Poppins-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-SemiBold.eot');
+  src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+    url('/font/Poppins-SemiBold.woff') format('woff'),
+    url('/font/Poppins-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Italic.eot');
+  src: local('Poppins Italic'), local('Poppins-Italic'),
+    url('/font/Poppins-Italic.woff') format('woff'),
+    url('/font/Poppins-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('Poppins-Bold.eot');
+  src: local('Poppins Bold'), local('Poppins-Bold'),
+    url('/font/Poppins-Bold.woff') format('woff'),
+    url('/font/Poppins-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--bg-style);
+  font-family: 'Popins', sans-serif;
+}
+/* navbar */
+
+.navbar__list {
+  margin:0 auto;
+}
+
+.navbar__item {
+  margin-left: 70px;
+}
+
+.navbar__link {
+  color: var(--primary-black);
+  padding-bottom: 5px;
+  transition: all 0.33s ease-in;
+  border-bottom: 0px solid transparent;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.navbar__link:hover {
+  color: var(--primary-black);
+  border-bottom: 3px solid var(--primary-orange);
+}
+
+.btn__primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 23px;
+  gap: 10px;
+
+  width: 108px;
+  height: 42px;
+
+  color: white;
+  background: var(--primary-green);
+  border-radius: 20px;
+}
+
+.btn__primary:hover {
+  box-shadow: 0 0 7px 3px rgba(0,0,0,0.2);
+}
+
+/* circle */
+
+.circle__list {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #E8E8E8;
+  border-radius: 50%;
+  position: relative;
+
+  animation-name: rote;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-timing-function: linear;
+}
+
+.circle__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+
+  /* background-color: rgba(187, 229, 255, 0.7); */
+  position: absolute;
+  border-radius: 50%;
+
+    
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.circle__item-1 {
+  animation-name: brit, scaleF;
+  animation-duration: .8s, 10s;
+  animation-delay: 3s, 9s;
+}
+
+.circle__item-2 {
+  animation-name: italy, scaleF;
+  animation-duration: .8s, 10s;
+  animation-delay: 3.4s, 7s;
+}
+
+.circle__item-3 {
+  animation-name: indi, scaleF;
+  animation-duration: .8s, 10s;
+  animation-delay: 3.8s, 5s;
+}
+
+@keyframes rote{
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  0% {
+    transform: rotateZ(0deg);}
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes brit {
+  0% {
+    top: 100px;
+    left: 100px;
+  }
+  100% {
+    top: 100px;
+    left: -50px;
+  }
+}
+
+@keyframes italy {
+  0% {
+    top: 100px;
+    left: 100px;
+  }
+  100% {
+    top: -45px;
+    left: 80px;
+  }
+}
+
+@keyframes indi {
+  0% {
+    top: 100px;
+    left: 100px;
+  }
+
+  100% {
+    top: 100px;
+    left: 245px;
+  }
+}
+
+@keyframes scaleF {
+  0% {
+    transform: scale(1.0);
+  }
+
+  30% {
+    transform: scale(0.3);
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@media(max-width:992px) {
+  .navbar__item {
+    margin-left: 0px;
+  }
+}
+
