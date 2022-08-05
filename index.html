@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="/img/logo_img.png" type="image/x-icon">
   <link rel="stylesheet" href="../css/bootstrap.css">
   <link rel="stylesheet" href="../css/fontello.css">
-  <link rel="stylesheet" href="../css/outline.css">
+  <!-- <link rel="stylesheet" href="../css/outline.css"> -->
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -66,22 +66,43 @@
   <main>
     <section class="section-offset">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
+        <div class="row section-row">
+          <div class="col-12 col-lg-6 d-flex flex-column">
             <h1 class="section__title">
-              Now Buy Your PIN or <span>Top Up</span> With Bank Transfer 
+              Now Buy Your<br> PIN or <span>Top Up</span> <br> With Bank Transfer 
             </h1>
-            <p class="setion__descr">We Make international calling simple, relible, and cheap basedon your unique calling behavior.</p>
-            <a href="#" role="button" class="section__link">Get Started</a>
+            <p class="section__descr">We Make international calling simple, relible, and cheap <br> basedon your unique calling behavior.</p>
+            <a href="#" role="button" class="section__link btn btn__primary mb-5">Get Started</a>
 
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <form action="">
+              <input type="search" placeholder="Where do you want to call?" maxlength="12" class="search-input">
+              <i class="fa act fa-search"></i>
+             
             </form>
-
+             <div class="" ><span class="symbol" data-search="Минимальное кол-во символов 4 / "></span><output class="out"></output></div>
+            <div class="section__reviews mt-3">
+              <ul class="reviews__list d-flex align-items-center">
+                <li class="reviews__item">
+                  <img src="/img/Ellipse 291.png" alt="user1" class="reviews__avatar img-fluid">
+                </li>
+                <li class="reviews__item">
+                  <img src="/img/Ellipse 292.png" alt="user2" class="reviews__avatar img-fluid">
+                </li>
+                <li class="reviews__item">
+                  <img src="/img/Ellipse 293.png" alt="user3" class="reviews__avatar img-fluid">
+                </li>
+                <li class="reviews__item">
+                  <img src="/img/Ellipse 294.png" alt="user4" class="reviews__avatar img-fluid">
+                </li>
+                <li class=" reviews__item reviews__item__descr">
+                  <p class="reviews__descr mb-0">45k+ Regular User. <a href="#" target="_blank"> View Price Plan</a></p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="col-12 col-md-6">
-            <ul class="circle__list">
+          <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex align-items-center block-relative">
+            <ul class="circle__list mx-auto">
               <li class="circle__item circle__item-1">
                 <img src="/img/british.png" class="img-fluid" alt="British">
               </li>
@@ -92,6 +113,9 @@
                 <img src="/img/indi.png" class="img-fluid" alt="Indi">
               </li>
             </ul>
+            <div class="girl-img">
+              <img src="/img/girl.png" alt="girl" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
@@ -101,5 +125,6 @@
 
   </footer>
   <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../js/search.js"></script>
 </body>
 </html>

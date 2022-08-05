@@ -25,6 +25,10 @@ aside {
   display: block;
 }
 
+header, footer {
+  padding-top: 30px;
+}
+
 html, body {
   height: 100%;
   width: 100%;
